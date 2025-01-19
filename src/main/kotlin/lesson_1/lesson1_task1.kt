@@ -1,6 +1,7 @@
 package lesson_1
 
 fun main() {
-    println("решение 1")
-    println("немного изменил")
+    var numberOfOrders: Int = 75
+    val customerThankYouText: String = "Благодарим Вас за покупку $numberOfOrders позиций товара!"
+    println(customerThankYouText)
 }
