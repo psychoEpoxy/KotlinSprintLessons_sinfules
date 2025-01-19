@@ -1,8 +1,9 @@
 package lesson_1
 
 fun main() {
-    val hours = SECOND_IN_SPACE / SECOND_IN_HOUR
-    val remainingSeconds = SECOND_IN_SPACE % SECOND_IN_HOUR
+    val secondInSpace = 6380
+    val hours = secondInSpace / SECOND_IN_HOUR
+    val remainingSeconds = secondInSpace % SECOND_IN_HOUR
 
     val minute = remainingSeconds / SECOND_IN_MINUTE
     val seconds = remainingSeconds % SECOND_IN_MINUTE
@@ -13,4 +14,3 @@ fun main() {
 
 const val SECOND_IN_HOUR = 3600
 const val SECOND_IN_MINUTE = 60
-const val SECOND_IN_SPACE = 6380
