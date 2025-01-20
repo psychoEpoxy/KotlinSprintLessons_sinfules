@@ -1,3 +1,4 @@
 fun main() {
-    println("hello")
+    val a = 4
+    println(a)
 }
