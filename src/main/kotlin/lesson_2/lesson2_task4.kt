@@ -1,13 +1,14 @@
 package lesson_2
 
 fun main() {
-    val buff = 20
+    val percentIncrease = 20
+    val totalPercent = 100
 
-    val crystal = 7
-    val iron = 11
+    val initialCrystal = 7
+    val initialIron = 11
 
-    val bonusCrystal = (crystal * buff / 100)
-    val bonusIron = (iron * buff / 100)
+    val bonusCrystal = (initialCrystal * percentIncrease / totalPercent)
+    val bonusIron = (initialIron * percentIncrease / totalPercent)
 
     println("Бонусные кристалы - $bonusCrystal")
     println("Бонусное железо - $bonusIron")
