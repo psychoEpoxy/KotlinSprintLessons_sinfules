@@ -4,10 +4,13 @@ import kotlin.math.pow
 
 fun main() {
     val deposit = 70_000.0
-    val percent = 16.7 / 100
+    val percent = 16.7
+    val percentDivider = 100.0
     val years = 20
 
-    val compoundInterest = deposit * (1 + percent).pow(years)
+    val interestRate = percent / percentDivider
+
+    val compoundInterest = deposit * (1 + interestRate).pow(years)
 
     println("Размер вклада через $years лет: %.3f".format(compoundInterest))
 }
