@@ -3,19 +3,22 @@ package lesson_4
 
 fun main() {
     println("Есть ли повреждения корпуса? (true/false):")
-    val isDamage = readLine()?.toBoolean() ?: false
+    val isDamage = readln().toBoolean()
 
     println("Введите текущий состав экипажа:")
-    val crewCounter = readLine()?.toInt() ?: 0
+    val crewCounter = readln().toInt()
 
     println("Введите количетсво ящиков с провизией на борту:")
-    val foodBoxes = readLine()?.toInt() ?: 0
+    val foodBoxes = readln().toInt()
 
     println("Благоприятная ли сейчас погода? (true/false)")
-    val weather = readLine()?.toBoolean() ?: false
+    val weather = readln().toBoolean()
 
     val conditions =
-        (!isDamage && crewCounter in MIN_CREW_COUNTER..MAX_CREW_COUNTER && foodBoxes > MIN_FOOD_BOXES && (weather || !weather)) ||
+        (!isDamage
+                && crewCounter in MIN_CREW_COUNTER..MAX_CREW_COUNTER
+                && foodBoxes > MIN_FOOD_BOXES
+                && (weather || !weather)) ||
                 (isDamage && crewCounter == MAX_CREW_COUNTER && weather && foodBoxes >= MIN_FOOD_BOXES)
 
     println("Корабль может отправиться в плавание: $conditions")
