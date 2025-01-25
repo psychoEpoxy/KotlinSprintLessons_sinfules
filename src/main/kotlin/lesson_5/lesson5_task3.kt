@@ -9,9 +9,17 @@ fun main() {
 
     if (userNumber1 != null && userNumber2 != null) {
         println("Правильные числа для победы: $FIRST_CORRECT_NUMBER и $SECOND_CORRECT_NUMBER")
-        if ((userNumber1 == FIRST_CORRECT_NUMBER && userNumber2 == SECOND_CORRECT_NUMBER) || (userNumber1 == SECOND_CORRECT_NUMBER && userNumber2 == FIRST_CORRECT_NUMBER)) {
+        if ((userNumber1 == FIRST_CORRECT_NUMBER
+                    && userNumber2 == SECOND_CORRECT_NUMBER)
+            || (userNumber1 == SECOND_CORRECT_NUMBER
+                    && userNumber2 == FIRST_CORRECT_NUMBER)
+        ) {
             println("Поздравляем! Вы выиграли главный приз!")
-        } else if (userNumber1 == FIRST_CORRECT_NUMBER || userNumber1 == SECOND_CORRECT_NUMBER || userNumber2 == FIRST_CORRECT_NUMBER || userNumber2 == SECOND_CORRECT_NUMBER) {
+        } else if (userNumber1 == FIRST_CORRECT_NUMBER
+            || userNumber1 == SECOND_CORRECT_NUMBER
+            || userNumber2 == FIRST_CORRECT_NUMBER
+            || userNumber2 == SECOND_CORRECT_NUMBER
+        ) {
             println("Вы выиграли утешительный приз!")
         } else {
             println("Неудача!")
